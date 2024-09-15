@@ -1,0 +1,38 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.download-btn{
+    position: absolute;
+    z-index: 1000;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.393);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.download-btn:hover{
+    opacity: 0.8;
+}
