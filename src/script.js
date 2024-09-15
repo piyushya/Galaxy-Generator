@@ -2,6 +2,22 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import GUI from 'lil-gui'
 
+import Swal from 'sweetalert2'
+
+window.addEventListener("load", () => {
+    Swal.fire({
+        title: 'Galaxy Generator',
+        text: `Click on the Galaxy Controller drop down to open the galaxy parameters edit menu,
+        generate your own unique galaxies and save using the Download Snapshot button.
+        This Galaxy Generator is develped by following the ThreeJS Journey course by
+        Bruno Simons`,
+        icon: 'info',
+        confirmButtonText: 'Got It',
+        footer: `<a target="blank" href="https://github.com/piyushya/Galaxy-Generator">View Source Code</a>
+        &nbsp&nbsp&nbsp<a target="blank" href="https://threejs-journey.com/">ThreeJS Journey</a>`
+    })
+})
+
 /**
  * Base
  */

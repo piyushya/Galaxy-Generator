@@ -8,6 +8,8 @@ html,
 body
 {
     overflow: hidden;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .webgl
@@ -42,7 +44,7 @@ body
     background-image: url("/sound-off.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.6;
+    opacity: 0.5;
     width: 3rem;
     height: 3rem;
     border: 0;
@@ -61,4 +63,21 @@ body
 
 .download-btn:hover{
     opacity: 0.8;
+}
+
+@media screen and (max-width: 780px) {
+    body {
+        background-size: 150vw;
+    }
+}
+
+/* Phone styling */
+@media screen and (max-width: 590px) {
+    .audio-btn{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .audio-btn:hover{
+        opacity: 0.6;
+    }
 }
