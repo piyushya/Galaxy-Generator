@@ -33,6 +33,32 @@ body
     cursor: pointer;
 }
 
+.audio-btn{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
+    background: none;
+    background-image: url("/sound-off.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    transition: opacity 0.2s;
+    cursor: pointer;
+    outline: none;
+}
+
+.audio-btn:hover{
+    opacity: 0.8;
+}
+
+.audio-on{
+    background-image: url("/sound-on.svg");
+}
+
 .download-btn:hover{
     opacity: 0.8;
 }

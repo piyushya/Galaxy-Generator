@@ -40,6 +40,20 @@ download.addEventListener("click", () => {
     link.click();
 })
 
+// play sound button
+const soundBtn = document.querySelector(".audio-btn")
+const audio = document.querySelector("audio")
+soundBtn.addEventListener("click", () => {
+    if (audio.paused) {
+        console.log("playing")
+        audio.play();
+    } else {
+        console.log("paused")
+        audio.pause();
+    }
+    soundBtn.classList.toggle("audio-on")
+});
+
 // Scene
 const scene = new THREE.Scene()
 
